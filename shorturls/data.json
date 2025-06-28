@@ -10,5 +10,11 @@
   "142.93.127.71:2310": {
     "url": "http://142",
     "createdAt": 1751078933500
+  },
+  "kominesiav1": {
+    "url": "https://www.kominesiaid.xyz",
+    "title": "Komi Nesia",
+    "createdAt": 1751081568093,
+    "expired": 1751086168093
   }
 }
