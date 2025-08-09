@@ -852,5 +852,10 @@
       "createdAt": 1754736114732,
       "expired": 1754737014732
     }
+  },
+  "wagt": {
+    "url": "https://zgtop.xyz",
+    "title": "WhatsApp Gateway",
+    "createdAt": 1754737079408
   }
 }
