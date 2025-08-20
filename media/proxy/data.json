@@ -48,5 +48,11 @@
     "aid": "6e12999524515f1d",
     "gaid": "ade22abe-2b10-4eb2-bccf-5d126ccf31f7",
     "systemversion": "Xiaomi|25057RN09E|12"
+  },
+  "proxy": {
+    "ag0ugj": {
+      "url": "https://drama-app-static.jowo.tv/static/m3u8/12412/822488/fe13ae3f8ff862d9d65df371ecad8a_1080.m3u8?t=68a83844&us=0162a2fa4154ea1ea0594013e3a11a99&sign=4ccd66a510560df54db0b08ed9c138e2f29c3dfa4c2495354503&sign=8ada23472b68f455c70802c849c9fccbb4b5f689",
+      "createdAt": 1755682143490
+    }
   }
 }
