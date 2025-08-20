@@ -53,6 +53,12 @@
     "ag0ugj": {
       "url": "https://drama-app-static.jowo.tv/static/m3u8/12412/822488/fe13ae3f8ff862d9d65df371ecad8a_1080.m3u8?t=68a83844&us=0162a2fa4154ea1ea0594013e3a11a99&sign=4ccd66a510560df54db0b08ed9c138e2f29c3dfa4c2495354503&sign=8ada23472b68f455c70802c849c9fccbb4b5f689",
       "createdAt": 1755682143490
+    },
+    "short": {
+      "url": "https://drama-app-static.jowo.tv/static/m3u8/12412/822488/fe13ae3f8ff862d9d65df371ecad8a_1080.m3u8?t=68a83879&us=ea85cd0ab05ea17a0e4769166b20acc0&sign=1dafc19fff8810f3b25963063bf495f64902aa4f",
+      "title": "short.mp4",
+      "createdAt": 1755682204912,
+      "expired": 1755685804912
     }
   }
 }
