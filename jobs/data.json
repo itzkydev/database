@@ -9,5 +9,8 @@
   "309942d4-b92a-4b6c-8ea8-9c93d2cf2962": {
     "status": "error",
     "error": "Client network socket disconnected before secure TLS connection was established"
+  },
+  "c1975f7c-f696-4743-bc69-d88d0b6b71fb": {
+    "status": "pending"
   }
 }
