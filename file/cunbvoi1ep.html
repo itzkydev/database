@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resto Aulia - Pesan Online</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #fce7f3 0%, #f9a8d4 50%, #ec4899 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .menu-item {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(45deg, #ec4899, #be185d);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(45deg, #be185d, #9d174d);
+            transform: translateY(-2px);
+        }
+        
+        .floating-hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .heart {
+            position: absolute;
+            color: rgba(236, 72, 153, 0.1);
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen">
+    <div class="floating-hearts">
+        <div class="heart text-4xl" style="left: 10%; animation-delay: 0s;">💖</div>
+        <div class="heart text-3xl" style="left: 20%; animation-delay: 1s;">🌸</div>
+        <div class="heart text-5xl" style="left: 30%; animation-delay: 2s;">💕</div>
+        <div class="heart text-2xl" style="left: 40%; animation-delay: 3s;">🌺</div>
+        <div class="heart text-4xl" style="left: 50%; animation-delay: 4s;">💗</div>
+        <div class="heart text-3xl" style="left: 60%; animation-delay: 5s;">🌸</div>
+        <div class="heart text-5xl" style="left: 70%; animation-delay: 0.5s;">💖</div>
+        <div class="heart text-2xl" style="left: 80%; animation-delay: 1.5s;">🌺</div>
+        <div class="heart text-4xl" style="left: 90%; animation-delay: 2.5s;">💕</div>
+    </div>
+
+    <header class="bg-white/20 backdrop-blur-md shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="text-4xl">🌸</div>
+                    <h1 class="text-3xl font-bold text-pink-800">Resto Aulia</h1>
+                </div>
+                <div class="text-pink-700 font-medium">
+                    📞 0812-3456-7890
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-16 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-bold text-pink-800 mb-4">Selamat Datang di Resto Aulia</h2>
+            <p class="text-xl text-pink-700 mb-8">Nikmati kelezatan makanan dengan cita rasa istimewa</p>
+            <div class="text-6xl mb-8">🍽️✨</div>
+        </div>
+    </section>
+
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h3 class="text-4xl font-bold text-center text-pink-800 mb-12">Menu Spesial Kami</h3>
+            <div class="max-w-2xl mx-auto space-y-6">
+                <div class="menu-item rounded-2xl p-6 card-hover border border-pink-200">
+                    <div class="flex items-center space-x-4">
+                        <div class="text-6xl">🍛</div>
+                        <div class="flex-1">
+                            <h4 class="text-2xl font-bold text-pink-800">Nasi Gudeg Aulia</h4>
+                            <p class="text-pink-600 mb-2">Gudeg khas dengan bumbu rahasia, disajikan dengan ayam dan telur</p>
+                            <div class="text-2xl font-bold text-pink-700">Rp 25.000</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item rounded-2xl p-6 card-hover border border-pink-200">
+                    <div class="flex items-center space-x-4">
+                        <div class="text-6xl">🍜</div>
+                        <div class="flex-1">
+                            <h4 class="text-2xl font-bold text-pink-800">Soto Ayam Spesial</h4>
+                            <p class="text-pink-600 mb-2">Soto ayam dengan kuah bening, dilengkapi telur dan kerupuk</p>
+                            <div class="text-2xl font-bold text-pink-700">Rp 20.000</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item rounded-2xl p-6 card-hover border border-pink-200">
+                    <div class="flex items-center space-x-4">
+                        <div class="text-6xl">🍗</div>
+                        <div class="flex-1">
+                            <h4 class="text-2xl font-bold text-pink-800">Ayam Bakar Madu</h4>
+                            <p class="text-pink-600 mb-2">Ayam bakar dengan bumbu madu manis, disajikan dengan nasi hangat</p>
+                            <div class="text-2xl font-bold text-pink-700">Rp 30.000</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item rounded-2xl p-6 card-hover border border-pink-200">
+                    <div class="flex items-center space-x-4">
+                        <div class="text-6xl">🐟</div>
+                        <div class="flex-1">
+                            <h4 class="text-2xl font-bold text-pink-800">Ikan Bakar Sambal Matah</h4>
+                            <p class="text-pink-600 mb-2">Ikan segar dibakar dengan sambal matah khas Bali</p>
+                            <div class="text-2xl font-bold text-pink-700">Rp 35.000</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item rounded-2xl p-6 card-hover border border-pink-200">
+                    <div class="flex items-center space-x-4">
+                        <div class="text-6xl">🥤</div>
+                        <div class="flex-1">
+                            <h4 class="text-2xl font-bold text-pink-800">Es Teh Manis Aulia</h4>
+                            <p class="text-pink-600 mb-2">Minuman segar dengan rasa teh manis yang pas</p>
+                            <div class="text-2xl font-bold text-pink-700">Rp 8.000</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item rounded-2xl p-6 card-hover border border-pink-200">
+                    <div class="flex items-center space-x-4">
+                        <div class="text-6xl">🧋</div>
+                        <div class="flex-1">
+                            <h4 class="text-2xl font-bold text-pink-800">Jus Buah Segar</h4>
+                            <p class="text-pink-600 mb-2">Pilihan jus jeruk, mangga, atau alpukat segar</p>
+                            <div class="text-2xl font-bold text-pink-700">Rp 12.000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-md mx-auto menu-item rounded-2xl p-8 border border-pink-200">
+                <h3 class="text-3xl font-bold text-center text-pink-800 mb-8">Pesan Sekarang! 🛍️</h3>
+                <form id="orderForm" class="space-y-6">
+                    <div>
+                        <label class="block text-pink-700 font-medium mb-2">Nama Lengkap</label>
+                        <input type="text" id="customerName" required class="w-full px-4 py-3 rounded-xl border border-pink-200 focus:border-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-200">
+                    </div>
+                    <div>
+                        <label class="block text-pink-700 font-medium mb-2">Nomor WhatsApp</label>
+                        <input type="tel" id="phoneNumber" required class="w-full px-4 py-3 rounded-xl border border-pink-200 focus:border-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-200">
+                    </div>
+                    <div>
+                        <label class="block text-pink-700 font-medium mb-2">Menu Pilihan</label>
+                        <select id="menuChoice" required class="w-full px-4 py-3 rounded-xl border border-pink-200 focus:border-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-200">
+                            <option value="">Pilih Menu</option>
+                            <option value="Nasi Gudeg Aulia - Rp 25.000">Nasi Gudeg Aulia - Rp 25.000</option>
+                            <option value="Soto Ayam Spesial - Rp 20.000">Soto Ayam Spesial - Rp 20.000</option>
+                            <option value="Ayam Bakar Madu - Rp 30.000">Ayam Bakar Madu - Rp 30.000</option>
+                            <option value="Ikan Bakar Sambal Matah - Rp 35.000">Ikan Bakar Sambal Matah - Rp 35.000</option>
+                            <option value="Es Teh Manis Aulia - Rp 8.000">Es Teh Manis Aulia - Rp 8.000</option>
+                            <option value="Jus Buah Segar - Rp 12.000">Jus Buah Segar - Rp 12.000</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-pink-700 font-medium mb-2">Jumlah</label>
+                        <input type="number" id="quantity" min="1" value="1" required class="w-full px-4 py-3 rounded-xl border border-pink-200 focus:border-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-200">
+                    </div>
+                    <div>
+                        <label class="block text-pink-700 font-medium mb-2">Alamat Pengiriman</label>
+                        <textarea id="address" required rows="3" class="w-full px-4 py-3 rounded-xl border border-pink-200 focus:border-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-200"></textarea>
+                    </div>
+                    <div>
+                        <label class="block text-pink-700 font-medium mb-2">Catatan Tambahan</label>
+                        <textarea id="notes" rows="2" class="w-full px-4 py-3 rounded-xl border border-pink-200 focus:border-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-200" placeholder="Contoh: Pedas sedang, tanpa bawang..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full btn-primary text-white font-bold py-4 px-6 rounded-xl shadow-lg">
+                        Kirim Pesanan 🚀
+                    </button>
+                </form>
+                <div id="successMessage" class="hidden mt-6 p-4 bg-green-100 border border-green-300 rounded-xl text-green-700 text-center">
+                    ✅ Pesanan berhasil dikirim! Kami akan segera menghubungi Anda.
+                </div>
+                <div id="errorMessage" class="hidden mt-6 p-4 bg-red-100 border border-red-300 rounded-xl text-red-700 text-center">
+                    ❌ Terjadi kesalahan. Silakan coba lagi.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white/20 backdrop-blur-md py-8 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <div class="text-4xl mb-4">🌸</div>
+            <h4 class="text-2xl font-bold text-pink-800 mb-2">Resto Aulia</h4>
+            <p class="text-pink-700 mb-4">Jl. Raya Kuliner No. 123, Kota Rasa</p>
+            <p class="text-pink-600">Buka setiap hari: 10.00 - 22.00 WIB</p>
+            <div class="mt-6 text-pink-500">
+                © 2024 Resto Aulia. Dibuat dengan 💖
+            </div>
+        </div>
+    </footer>
+
+<script>
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbygs-Ks6tpYc1wEL_zI2XzM32MzGd1sIcB4gq9_DChRx18CdVmftfv3uJ7FFa2L_x3hAg/exec';
+const ADMIN_WHATSAPP = '6281244286794';
+const CONNECTION_ID = 'd7fe576a-65d5-4273-83cd-562e97048758';
+const API_URL = `https://versasoft.my.id/message/send/${CONNECTION_ID}`;
+const API_TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1NjkwMzM1ZC1hZDk0LTQzN2ItOGMzNC1iMmY4OGZmNDE3ZjUiLCJpYXQiOjE3NjA0MTk0OTAsImV4cCI6MTc2MzAxMTQ5MH0.8auPsTQ95mEhIINd0iFaAZlMnoJe-451ZhIHDM4og9o';
+
+document.getElementById('orderForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+
+  const formData = {
+    timestamp: new Date().toLocaleString('id-ID'),
+    customerName: document.getElementById('customerName').value,
+    phoneNumber: document.getElementById('phoneNumber').value,
+    menuChoice: document.getElementById('menuChoice').value,
+    quantity: document.getElementById('quantity').value,
+    address: document.getElementById('address').value,
+    notes: document.getElementById('notes').value || '-'
+  };
+
+  document.getElementById('successMessage').classList.add('hidden');
+  document.getElementById('errorMessage').classList.add('hidden');
+
+  const submitBtn = document.querySelector('button[type="submit"]');
+  const originalText = submitBtn.innerHTML;
+  submitBtn.innerHTML = 'Mengirim... ⏳';
+  submitBtn.disabled = true;
+
+  try {
+    await fetch(GOOGLE_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData)
+    });
+
+    const waMessage = [
+      '*PESANAN BARU RESTO AULIA*',
+      '',
+      '*DATA PEMESAN:*',
+      `Nama: ${formData.customerName}`,
+      `No. HP: ${formData.phoneNumber}`,
+      `Menu: ${formData.menuChoice}`,
+      `Jumlah: ${formData.quantity}`,
+      `Alamat: ${formData.address}`,
+      `Catatan: ${formData.notes}`,
+      '',
+      `Waktu Pesan: ${formData.timestamp}`,
+      '',
+      'Segera konfirmasi pesanan ini. 🍽️'
+    ].join('\n');
+
+    await fetch(API_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${API_TOKEN}`
+      },
+      body: JSON.stringify({
+        number: ADMIN_WHATSAPP,
+        message: waMessage
+      })
+    });
+
+    const formatPhoneNumber = (phone) => {
+      let cleaned = phone.replace(/\D/g, '');
+      if (cleaned.startsWith('0')) cleaned = '62' + cleaned.substring(1);
+      else if (!cleaned.startsWith('62')) cleaned = '62' + cleaned;
+      return cleaned;
+    };
+
+    const customerPhone = formatPhoneNumber(formData.phoneNumber);
+    const confirmationMessage = [
+      `Halo ${formData.customerName}! 👋`,
+      '',
+      '*KONFIRMASI PESANAN RESTO AULIA*',
+      '',
+      'Pesanan Anda telah kami terima ✅',
+      '',
+      '*Detail Pesanan:*',
+      `Menu: ${formData.menuChoice}`,
+      `Jumlah: ${formData.quantity}`,
+      `Alamat: ${formData.address}`,
+      '',
+      'Kami akan segera menghubungi Anda untuk konfirmasi pengantaran.',
+      '',
+      'Terima kasih telah memesan di *Resto Aulia*! 💖'
+    ].join('\n');
+
+    await fetch(API_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${API_TOKEN}`
+      },
+      body: JSON.stringify({
+        number: customerPhone,
+        message: confirmationMessage
+      })
+    });
+
+    document.getElementById('successMessage').classList.remove('hidden');
+    document.getElementById('orderForm').reset();
+    document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+  } catch (error) {
+    console.error('Error WhatsApp:', error);
+    document.getElementById('errorMessage').classList.remove('hidden');
+  } finally {
+    submitBtn.innerHTML = originalText;
+    submitBtn.disabled = false;
+  }
+});
+
+function createFloatingHeart() {
+  const heart = document.createElement('div');
+  heart.className = 'heart';
+  heart.style.left = Math.random() * 100 + '%';
+  heart.style.animationDelay = Math.random() * 6 + 's';
+  heart.style.fontSize = (Math.random() * 2 + 2) + 'rem';
+  heart.textContent = ['💖', '💕', '💗', '🌸', '🌺'][Math.floor(Math.random() * 5)];
+  document.querySelector('.floating-hearts').appendChild(heart);
+  setTimeout(() => heart.remove(), 6000);
+}
+setInterval(createFloatingHeart, 3000);
+</script>
+</body>
+</html>
