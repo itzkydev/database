@@ -21,6 +21,7 @@
     "status": "pending"
   },
   "555d19e5-6461-467b-8e3c-6c3aff4134fb": {
-    "status": "pending"
+    "status": "error",
+    "error": "Client network socket disconnected before secure TLS connection was established"
   }
 }
