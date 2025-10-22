@@ -13,5 +13,8 @@
   "c1975f7c-f696-4743-bc69-d88d0b6b71fb": {
     "status": "error",
     "error": "Client network socket disconnected before secure TLS connection was established"
+  },
+  "472b8806-457d-46eb-a467-97cd9a64f471": {
+    "status": "pending"
   }
 }
