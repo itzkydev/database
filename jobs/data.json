@@ -30,5 +30,8 @@
   "35908ab9-5de4-4d41-b07f-ab66542d3133": {
     "status": "error",
     "error": "Request failed with status code 404"
+  },
+  "d2d05dc3-8cf9-460c-86c7-d18bbfbf6307": {
+    "status": "pending"
   }
 }
