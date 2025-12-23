@@ -5475,5 +5475,11 @@
   "nesiahua": {
     "url": "https://nesiahua.jakysoft.xyz",
     "createdAt": 1765422303456
+  },
+  "Hoshino": {
+    "url": "https://hoshino-apis.vercel.app",
+    "title": "zionjs",
+    "createdAt": 1766505638308,
+    "expired": 2766505637308
   }
 }
